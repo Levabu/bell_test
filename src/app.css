@@ -1,0 +1,185 @@
+:root {
+  --accent: #eb3323;
+  --accent-hover: #c9271a;
+  --text: #000;
+  --muted: #6b6b6b;
+  --line: #e6e6e6;
+  --bg: #fff;
+  --soft: #f4f4f2;
+  --dark: #1c1c1c;
+  --dark-2: #2b2b2b;
+  --success: #1f8f4e;
+  --radius: 8px;
+  --gap: 10px;
+
+  --sans: 'Roboto Flex', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --display: 'Sofia Sans Condensed', 'Roboto Flex', system-ui, sans-serif;
+
+  font: 16px/1.45 var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---------------- shared buttons ---------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.btn:hover {
+  background: var(--accent-hover);
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+.btn.block {
+  width: 100%;
+}
+.btn.ghost {
+  background: transparent;
+  color: inherit;
+  box-shadow: inset 0 0 0 1px currentColor;
+}
+.btn.ghost:hover {
+  background: rgba(127, 127, 127, 0.12);
+}
+
+/* Category chip, as on thebell.io cards. */
+.chip {
+  display: inline-block;
+  padding: 7px 10px 6px;
+  border-radius: var(--radius);
+  font: 600 11px/11px var(--sans);
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+}
+.chip.light {
+  background: #fff;
+  color: #000;
+}
+.chip.accent {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ---------------- homepage rows ---------------- */
+/* Same model as thebell.io: a stack of rows; each row's basis splits it into
+   equal slots (25% → 4, 33% → 3, 50% → 2, 100% → 1). */
+
+.lines {
+  display: grid;
+  gap: var(--gap);
+}
+.line {
+  display: grid;
+  grid-template-columns: repeat(var(--slots), minmax(0, 1fr));
+  gap: var(--gap);
+}
+.line[data-basis='25'] { --slots: 4; }
+.line[data-basis='33'] { --slots: 3; }
+.line[data-basis='50'] { --slots: 2; }
+.line[data-basis='100'] { --slots: 1; }
+
+/* One slot. Widgets size their type by the slot width, not the viewport. */
+.widget {
+  position: relative;
+  min-width: 0;
+  padding: 20px;
+  border-radius: var(--radius);
+  container-type: inline-size;
+}
+.line[data-basis='33'] > .widget,
+.line[data-basis='50'] > .widget {
+  min-height: 300px;
+}
+.line[data-basis='100'] > .widget {
+  min-height: 500px;
+}
+
+/* Phone: 25-rows become a swipe row of 250×250 cards, other rows stack. */
+@media (max-width: 767px) {
+  :root {
+    --gap: 8px;
+  }
+  .line {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .line > .widget {
+    min-height: 250px !important;
+  }
+  .line[data-basis='25'] {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  .line[data-basis='25']::-webkit-scrollbar {
+    display: none;
+  }
+  .line[data-basis='25'] > .widget {
+    flex: 0 0 250px;
+    scroll-snap-align: start;
+  }
+}

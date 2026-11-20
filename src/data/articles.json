@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "collectedAt": "2026-11-19",
+    "source": "https://thebell.io/ homepage",
+    "purpose": "Filler news cards for the demo grid, so the new blocks are shown in a realistic context."
+  },
+  "articles": [
+    { "rubric": "Истории", "title": "Компания на $1,4 трлн: как Anthropic хотела притормозить гонку ИИ, но вырвалась в ней вперед", "url": "https://thebell.io/kompaniya-na-14-trln-kak-anthropic-khotela-pritormozit-gonku-ii-no-vyrvalas-v-ney-vpered", "image": "https://thebell.io/storage_v2/images/007/6ba/0076badb-bb9c-4c50-8fc7-8efbd0a1f49b_632_300.webp" },
+    { "rubric": "Вечерняя рассылка", "title": "Как прошел рекордный дебют Anthropic, Европу зовут на переговоры и сколько Japan Tobacco потеряла в России", "url": "https://thebell.io/kak-proshel-rekordnyy-debyut-anthropic-evropu-zovut-na-peregovory-i-skolko-japan-tobacco-poteryala-v-rossii", "image": "https://thebell.io/storage_v2/images/92c/425/92c42549-595c-49b3-a2f4-e4ce75ae2826_632_300.webp" },
+    { "rubric": "The Bell.Invest", "title": "Сейчас или никогда. Как заработать на волне мегасделок", "url": "https://thebell.io/seychas-ili-nikogda-kak-zarabotat-na-volne-megasdelok", "image": "https://thebell.io/storage_v2/images/c58/4ec/c584ec5e-f984-4a18-8004-d85838cae8c0_632_300.webp" },
+    { "rubric": "The Bell.Tech", "title": "Чипы, шпионы и контрабанда: все, что нужно знать об увольнении главы Nvidia Дженсена Хуанга", "url": "https://thebell.io/chipy-shpiony-i-kontrabanda-vse-chto-nuzhno-znat-ob-uvolnenii-glavy-nvidia-dzhensena-khuanga", "image": "https://thebell.io/storage_v2/images/e64/758/e647585a-6079-4524-a373-6e7a8e63bd1e_632_300.webp" },
+    { "rubric": "Новости", "title": "Anthropic обошел SpaceX по сумме IPO", "url": "https://thebell.io/anthropic-oboshel-spacex-po-summe-ipo", "image": "https://thebell.io/storage_v2/images/e5a/1eb/e5a1eb1e-7822-4371-b9d1-13b30683a09c_632_300.webp" },
+    { "rubric": "The Bell.Invest", "title": "Дата-центры на паузе. Во сколько победа демократов может обойтись участникам ИИ-гонки", "url": "https://thebell.io/data-tsentry-na-pauze-vo-skolko-pobeda-demokratov-mozhet-oboytis-uchastnikam-ii-gonki", "image": "https://thebell.io/storage_v2/images/df8/34a/df834af1-dd37-4420-a8cc-e6c21c81056e_632_300.webp" },
+    { "rubric": "Итоги недели", "title": "Есть ли шансы у переговоров, история падения Дженсена Хуанга и где инвестору прятаться от ИИ-распродажи", "url": "https://thebell.io/est-li-shansy-u-peregovorov-istoriya-padeniya-dzhensena-khuanga-i-gde-investoru-pryatatsya-ot-ii-rasprodazhi", "image": "https://thebell.io/storage_v2/images/0b3/155/0b315592-3bdb-4f6b-ac63-701d6043d757_632_300.webp" },
+    { "rubric": "Утренняя рассылка", "title": "Украина вошла в повестку саммита, IPO Anthropic уже точно рекордное, новая атака на Крымский мост", "url": "https://thebell.io/ukraina-voshla-v-povestku-sammita-ipo-anthropic-uzhe-tochno-rekordnoe-novaya-ataka-na-krymskiy-most", "image": "https://thebell.io/storage_v2/images/774/4fa/7744fa26-ad6c-416f-a398-42c61473e256_632_300.webp" },
+    { "rubric": "The Bell.Invest", "title": "Переждать бурю. Три надежные дивидендные компании для неспокойных времен", "url": "https://thebell.io/perezhdat-buryu-tri-nadezhnye-dividendnye-kompanii-dlya-nespokoynykh-vremen", "image": "https://thebell.io/storage_v2/images/e68/1a2/e681a25c-a5bd-48e2-a6db-ff3a66e3e960_632_300.webp" },
+    { "rubric": "The Bell.Tech", "title": "Почему Америка ненавидит дата-центры, хронология самого большого криптовзлома в истории и кто в итоге заработает на ИИ", "url": "https://thebell.io/pochemu-amerika-nenavidit-data-tsentry-khronologiya-samogo-bolshogo-kriptovzloma-v-istorii-i-kto-v-itoge-zarabotaet-na-ii", "image": "https://thebell.io/storage_v2/images/655/7af/6557af48-5ea3-47ee-a9cb-0aa47b8363e5_632_300.webp" }
+  ],
+  "headlines": [
+    { "title": "Акции Anthropic открылись на 34% выше цены IPO. Компанию оценили примерно в $2 трлн", "time": "Три часа назад", "url": "https://thebell.io/aktsii-anthropic-otkrylis-na-34-vyshe-tseny-ipo-kompaniyu-otsenili-primerno-v-2-trln" },
+    { "title": "Генпрокуратура предупредила владельца Wikipedia о нежелательном статусе", "time": "Пять часов назад", "url": "https://thebell.io/genprokuratura-predupredila-vladeltsa-wikipedia-onezhelatelnom-statuse" },
+    { "title": "Путин, Трамп и Си Цзиньпин приняли «Декларацию о мире». Об Украине в ней ничего нет", "time": "Девять часов назад", "url": "https://thebell.io/putin-tramp-i-si-tszinpin-prinyali-deklaratsiyu-o-mire-ob-ukraine-v-ney-nichego-net" },
+    { "title": "Мир может обойтись без Ормузского пролива – МЭА", "time": "11 часов назад", "url": "https://thebell.io/mir-mozhet-oboytis-bez-ormuzskogo-proliva--mea" },
+    { "title": "IPO Anthropic перекроит рейтинг миллиардеров Кремниевой долины", "time": "18 ноября 2026", "url": "https://thebell.io/ipo-anthropic-perekroit-reyting-milliarderov-kremnievoy-doliny" },
+    { "title": "США перекрывают Китаю доступ к дата-центрам третьих стран", "time": "17 ноября 2026", "url": "https://thebell.io/ssha-perekryvayut-kitayu-dostup-kdata-tsentram-tretikh-stran" }
+  ]
+}

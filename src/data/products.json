@@ -1,0 +1,159 @@
+{
+  "_meta": {
+    "collectedAt": "2026-11-19",
+    "sources": [
+      "https://subscription.thebell.site/tech (embedded CONFIG object)",
+      "https://subscription.thebell.site/unlimited",
+      "https://thebell.io/invest",
+      "https://thebell.io/paywall"
+    ],
+    "notes": [
+      "Prices are numbers in the currency's main unit (USD dollars, RUB rubles).",
+      "RUB is only offered as a 12-month plan (plus 6 months for News). USD has monthly / 6-month / yearly.",
+      "Trial ($1 for the first month) exists for Tech and Invest only, new users only; webinars are not included in the trial.",
+      "Unlimited landing says 'separately = 42 800 ₽/yr' but the individual RUB prices (12 800 + 15 200 + 11 800) add up to 39 800 ₽ — the site is inconsistent, worth mentioning in the critique.",
+      "Checkout URLs are the real thebell.site checkout links taken from the Tech page; Invest/News/Unlimited-6m checkout URLs were not visible without clicking through, so they are null."
+    ]
+  },
+  "periods": [
+    { "id": "trial", "label": "Пробный", "months": 1, "unit": "первый месяц", "billing": "Затем по ежемесячному тарифу" },
+    { "id": "m1", "label": "Ежемесячный", "months": 1, "unit": "в месяц", "billing": "Списывается раз в месяц" },
+    { "id": "m6", "label": "Полугодовой", "months": 6, "unit": "за полгода", "billing": "Списывается раз в полгода" },
+    { "id": "m12", "label": "Годовой", "months": 12, "unit": "за год", "billing": "Списывается раз в год" }
+  ],
+  "products": [
+    {
+      "id": "invest",
+      "name": "The Bell.Invest",
+      "tagline": "Фондовый рынок глазами долгосрочного инвестора",
+      "description": "Как смотреть на рынок и за чем следить, чтобы получить хорошую доходность и не потерять деньги. Разбор главных тем для инвесторов, большие инвестидеи и эксклюзивная аналитика.",
+      "landingUrl": "https://thebell.io/invest",
+      "features": {
+        "trial": [
+          { "text": "Четыре рассылки The Bell.Invest" },
+          { "text": "Архив материалов", "included": false },
+          { "text": "Вебинары", "included": false }
+        ],
+        "paid": [
+          { "text": "Все новые материалы и рассылки" },
+          { "text": "Полный архив материалов" },
+          { "text": "Неограниченный доступ к вебинарам" }
+        ]
+      },
+      "prices": {
+        "USD": { "trial": 1, "m1": 18.9, "m6": 90, "m12": 180 },
+        "RUB": { "m12": 15200 }
+      },
+      "oldPrices": {},
+      "checkoutUrls": { "USD": {}, "RUB": {} },
+      "highlights": ["95% положительных отзывов от подписчиков рассылки"],
+      "sampleHeadlines": [
+        "«Великая умеренность окончена». Почему облигации перестанут защищать портфель",
+        "Baby bubble на искусственном интеллекте. Чем ситуация на рынке напоминает «пузырь доткомов»",
+        "Американские фармкомпании ждет новый «патентный обвал». На что рассчитывать инвесторам?"
+      ]
+    },
+    {
+      "id": "tech",
+      "name": "The Bell.Tech",
+      "tagline": "О технологиях и IT‑компаниях в мире и в России",
+      "description": "Рассылка и вебинары о самом главном — о технологиях. Это не то, что ждет нас в будущем, это то, что меняет настоящее прямо сейчас.",
+      "landingUrl": "https://subscription.thebell.site/tech",
+      "features": {
+        "trial": [
+          { "text": "Еженедельная рассылка The Bell.Tech о технологиях" },
+          { "text": "Архив материалов The Bell.Tech на сайте за последние 14 дней" },
+          { "text": "Участие во всех закрытых вебинарах The Bell.Tech и их записи", "included": false }
+        ],
+        "paid": [
+          { "text": "Еженедельная рассылка The Bell.Tech о технологиях" },
+          { "text": "Полный архив из 400+ материалов The Bell.Tech на сайте" },
+          { "text": "Участие во всех закрытых вебинарах The Bell.Tech и их записи" }
+        ]
+      },
+      "prices": {
+        "USD": { "trial": 1, "m1": 14.9, "m12": 149 },
+        "RUB": { "m12": 12800 }
+      },
+      "oldPrices": {
+        "USD": { "m12": 178.8 },
+        "RUB": { "m12": 15800 }
+      },
+      "checkoutUrls": {
+        "USD": {
+          "trial": "https://thebell.site/checkout/75b1e38437395f34c518010aecf59c9410d400f4",
+          "m1": "https://thebell.site/checkout/62a53293080185ee0749eb59c3c84ddbf5b704bf",
+          "m12": "https://thebell.site/checkout/845617d9de8fa266cb2b1ce7813f35b9dc732dd1"
+        },
+        "RUB": {
+          "m12": "https://thebell.site/checkout/a14e16c932061fcf52c0899bb2a7fb601277d6c0"
+        }
+      },
+      "highlights": ["50+ писем в год", "20 000+ подписчиков", "400+ выпусков с 2018 года"],
+      "sampleHeadlines": [
+        "Чипы, шпионы и контрабанда: все, что нужно знать об увольнении главы Nvidia Дженсена Хуанга",
+        "Почему Америка ненавидит дата-центры, хронология самого большого криптовзлома в истории и кто в итоге заработает на ИИ"
+      ]
+    },
+    {
+      "id": "news",
+      "name": "Новости и аналитика",
+      "tagline": "Новостные рассылки The Bell — «Утро», «Вечер» и «Итоги недели»",
+      "description": "Утро — самые интересные статьи российских и мировых СМИ. Вечер — главное событие дня без лишних вопросов. Итоги недели — как новости ложатся в большую картину экономики и политики.",
+      "landingUrl": "https://thebell.io/paywall",
+      "freeTier": {
+        "label": "Пробный",
+        "text": "3 письма в месяц бесплатно, ограниченный доступ к рассылкам The Bell"
+      },
+      "features": {
+        "paid": [
+          { "text": "Утро — каждое утро по будням" },
+          { "text": "Вечер — каждый вечер по будням" },
+          { "text": "Итоги недели — каждую пятницу вечером" }
+        ]
+      },
+      "prices": {
+        "USD": { "m1": 9.8, "m6": 58.8, "m12": 107 },
+        "RUB": { "m6": 5900, "m12": 11800 }
+      },
+      "oldPrices": {},
+      "checkoutUrls": { "USD": {}, "RUB": {} },
+      "highlights": ["Около 100 000 читателей рассылок", "5 минут на чтение выпуска"],
+      "sampleHeadlines": []
+    },
+    {
+      "id": "unlimited",
+      "name": "The Bell.Unlimited",
+      "tagline": "Пять рассылок, эксклюзивные вебинары, весь контент на сайте",
+      "description": "Рассылки «Утро», «Вечер», «Итоги недели», The Bell.Tech и The Bell.Invest. Доступ ко всему архиву, закрытым вебинарам и телеграм-каналам.",
+      "landingUrl": "https://subscription.thebell.site/unlimited",
+      "features": {
+        "paid": [
+          { "text": "Все пять рассылок: Утро, Вечер, Итоги недели, Tech и Invest" },
+          { "text": "Весь архив материалов на сайте" },
+          { "text": "Все вебинары The Bell" }
+        ]
+      },
+      "prices": {
+        "USD": { "m1": 39, "m6": 219, "m12": 399 },
+        "RUB": { "m12": 39900 }
+      },
+      "savings": {
+        "USD": { "m1": "Выгода $8 в месяц", "m6": "Выгода $38 за полгода", "m12": "Выгода $66 в год" },
+        "RUB": { "m12": "Выгода 2 900 ₽ в год" }
+      },
+      "oldPrices": {},
+      "checkoutUrls": {
+        "USD": {
+          "m1": "https://thebell.site/checkout/c0977a668340c51cecc18e17e1e5a38477b189b6",
+          "m12": "https://thebell.site/checkout/bab2deb6efad5277e5e955ba2a02fdfc9bd77b1f"
+        },
+        "RUB": {
+          "m12": "https://thebell.site/checkout/21d3497e2f64a577039432b4916ae67efc58d830"
+        }
+      },
+      "highlights": ["Всё сразу дешевле, чем по отдельности"],
+      "sampleHeadlines": []
+    }
+  ]
+}

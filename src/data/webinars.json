@@ -1,0 +1,54 @@
+{
+  "_meta": {
+    "collectedAt": "2026-11-19",
+    "source": "https://the-chat.io/ (section «Осенний сезон вебинаров»)",
+    "notes": [
+      "Dates on the site are given as 'CET'. Stored as ISO with the real Berlin offset (+02:00 while summer time is on, until 25 Oct; +01:00 after).",
+      "productId is OUR assumption — the site does not say which product a webinar belongs to. Mapping: investing → invest, AI → tech, the other two → unlimited (only Unlimited includes 'all webinars'). This is a question for the client.",
+      "Status (upcoming/past) is NOT stored: the block computes it from startsAt vs. now.",
+      "image = the card photo from the-chat.io (Tilda CDN), matched by column: each photo sits directly above its webinar's text."
+    ]
+  },
+  "webinars": [
+    {
+      "id": "dashevsky-portfolio-2026",
+      "title": "Портфель инвестора в 2026-2027 годах",
+      "speaker": "Стивен Дашевский",
+      "speakerRole": "Исполнительный директор D&P Advisors, портфельный менеджер",
+      "image": "https://static.tildacdn.net/tild6563-3763-4436-a333-383366666231/photo.jpg",
+      "startsAt": "2026-09-14T18:00:00+02:00",
+      "productId": "invest",
+      "url": "https://chat.osetinskaya.io/live/dashevsky"
+    },
+    {
+      "id": "libermans-future-of-ai",
+      "title": "Будущее AI: мы создаем бога?",
+      "speaker": "Даниил и Давид Либерманы",
+      "speakerRole": "Предприниматели, инвесторы, визионеры",
+      "image": "https://static.tildacdn.net/tild3164-3333-4662-a132-313933343763/photo.jpg",
+      "startsAt": "2026-10-14T20:00:00+02:00",
+      "productId": "tech",
+      "url": "https://chat.osetinskaya.io/live/libermans"
+    },
+    {
+      "id": "peshkin-aging",
+      "title": "Как победить старение: какие ответы есть у науки и что мы можем сделать сами",
+      "speaker": "Леонид Пешкин",
+      "speakerRole": "Биолог из Гарвардского университета",
+      "image": "https://static.tildacdn.net/tila3933-6366-4165-b734-613163376165/image_2026-11-03_16-.png",
+      "startsAt": "2026-11-18T18:00:00+01:00",
+      "productId": "unlimited",
+      "url": "https://chat.osetinskaya.io/peshkin"
+    },
+    {
+      "id": "arkhipova-anthropology",
+      "title": "Великие антропологические открытия, изменившие мир",
+      "speaker": "Александра Архипова",
+      "speakerRole": "Социальный антрополог, фольклористка",
+      "image": "https://static.tildacdn.net/tild6132-6432-4339-a332-386336633033/photo.jpg",
+      "startsAt": "2026-12-03T19:00:00+01:00",
+      "productId": "unlimited",
+      "url": null
+    }
+  ]
+}
